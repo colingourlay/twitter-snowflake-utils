@@ -1,0 +1,31 @@
+{
+  "name": "twitter-snowflake-utils",
+  "version": "1.0.0",
+  "description": "Utilities for working with Twitter's snowflake algorithm",
+  "license": "MIT",
+  "contributors": [
+    "Colin Gourlay <colin@colin-gourlay.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colingourlay/twitter-snowflake-utils.git"
+  },
+  "main": "dist/twitter-snowflake-utils.js",
+  "module": "dist/twitter-snowflake-utils.mjs",
+  "umd:main": "dist/twitter-snowflake-utils.umd.js",
+  "source": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "microbundle watch",
+    "build": "microbundle --no-sourcemap",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  },
+  "dependencies": {
+    "jsbn": "^1.1.0"
+  }
+}
