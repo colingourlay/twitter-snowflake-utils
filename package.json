@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "start": "microbundle watch",
-    "build": "microbundle --no-sourcemap",
+    "build": "microbundle --sourcemap=false",
     "prepare": "npm run build"
   },
   "devDependencies": {
